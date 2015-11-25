@@ -6,7 +6,7 @@ FROM centos:latest
 
 MAINTAINER Ismael Puerto <ipuertofreire@gmail.com>
 
-ENV HITCH_PKG_NAME hitch-1.0.1
+ENV HITCH_PKG_NAME hitch-1.1.0
 
 RUN yum -y update; yum install -y yum-plugin-remove-with-leaves automake gcc libev-devel openssl-devel make python-docutils openssl ; yum clean all
 RUN curl -OLs https://github.com/varnish/hitch/archive/$HITCH_PKG_NAME.tar.gz
